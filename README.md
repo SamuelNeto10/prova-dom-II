@@ -180,15 +180,15 @@
                     listItem.appendChild(deleteButton);
                     notesList.appendChild(listItem);
 
-                    noteInput.value = ''; // Limpa o campo de entrada
-                    noteInput.focus(); // Retorna o foco para o campo de entrada
+                    noteInput.value = ''; 
+                    noteInput.focus(); 
                 }
             });
 
-            // Permite adicionar notas pressionando "Enter"
+          
             noteInput.addEventListener('keypress', (event) => {
                 if (event.key === 'Enter') {
-                    addNoteBtn.click(); // Simula o clique no botão
+                    addNoteBtn.click(); 
                 }
             });
         });
